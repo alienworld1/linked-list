@@ -28,5 +28,9 @@ class LinkedList {
         this.#tail = node;
     }
 
+    prepend(node) {
+        node.next = this.#head;
+        this.#head = node;
+    }
 
 }
