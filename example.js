@@ -28,3 +28,6 @@ console.log(linkedList.toString());
 
 linkedList.insertAt('new', 3);
 console.log(linkedList.toString());
+
+linkedList.removeAt(3);
+console.log(linkedList.toString());

@@ -125,4 +125,19 @@ export default class LinkedList {
         node.next = next;
     }
 
+    removeAt(index) {
+        if (index === 0) {
+            this.#head = this.#head.next;
+            return;
+        }
+
+        const current = this.at(index - 1);
+        if (!current.next) {
+            throw new Error('The index does not exist in this linked list.');
+        }
+
+        current.next = current.next.next;
+
+    }
+
 }
