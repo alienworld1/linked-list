@@ -7,3 +7,4 @@ linkedList.prepend('b');
 console.log(linkedList.head.value);
 console.log(linkedList.head.next.value);
 console.log(linkedList.tail.value);
+console.log(linkedList.size);
