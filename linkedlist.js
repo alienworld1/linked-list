@@ -23,5 +23,10 @@ class LinkedList {
         return this.tail;
     }
 
+    append(node) {
+        this.#tail.next = node;
+        this.#tail = node;
+    }
+
 
 }
