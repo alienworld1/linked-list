@@ -61,4 +61,14 @@ export default class LinkedList {
         return node;
     }
 
+    pop() {
+        const size = this.size;
+        if (size === 1) {
+            throw new Error('The list contains only one node.');
+        }
+
+        this.#tail = this.at(size - 2);
+        this.#tail.next = null;
+    }
+
 }

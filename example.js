@@ -14,3 +14,6 @@ console.log(linkedList.tail.value);
 console.log(linkedList.size);
 
 console.log(linkedList.at(3).value);
+
+linkedList.pop();
+console.log(linkedList.tail.value);
