@@ -4,3 +4,24 @@ function Node(value=null, next=null) {
         next,
     }
 }
+
+class LinkedList {
+
+    #head;
+    #tail;
+
+    constructor(head) {
+        this.#head = head;
+        this.#tail = head;
+    }
+
+    get head() {
+        return this.#head;
+    }
+
+    get tail() {
+        return this.tail;
+    }
+
+
+}
