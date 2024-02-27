@@ -25,3 +25,6 @@ console.log(linkedList.find('d'));
 console.log(linkedList.find('abc'));
 
 console.log(linkedList.toString());
+
+linkedList.insertAt('new', 3);
+console.log(linkedList.toString());

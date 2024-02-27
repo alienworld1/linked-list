@@ -111,4 +111,18 @@ export default class LinkedList {
         return result;
     }
 
+    insertAt(value, index) {
+        if (index === 0) {
+            this.prepend(value);
+            return;    
+        }
+
+        const node = Node(value);
+        const current = this.at(index - 1);
+        const next = current.next;
+
+        current.next = node;
+        node.next = next;
+    }
+
 }
