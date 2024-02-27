@@ -119,6 +119,11 @@ export default class LinkedList {
 
         const node = Node(value);
         const current = this.at(index - 1);
+
+        if (!current) {
+            throw new Error('This index is not accessible by this linked list.');
+        }
+
         const next = current.next;
 
         current.next = node;
