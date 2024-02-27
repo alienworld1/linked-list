@@ -20,3 +20,8 @@ console.log(linkedList.tail.value);
 
 console.log(linkedList.contains('d'));
 console.log(linkedList.contains('abc'));
+
+console.log(linkedList.find('d'));
+console.log(linkedList.find('abc'));
+
+console.log(linkedList.toString());
